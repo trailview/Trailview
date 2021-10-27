@@ -92,13 +92,69 @@ pictures, etc.
 
 ## Wireframes
 [Add picture of your hand sketched wireframes in this section]
-<img src="YOUR_WIREFRAME_IMAGE_URL" width=600>
+<img src="https://imgur.com/a/wg1opVM" width=600>
 
 ### [BONUS] Digital Wireframes & Mockups
 
 ### [BONUS] Interactive Prototype
 
-## Schema 
+## Schema
+### Models
+#### User
+
+   | Property      | Type     | Description |
+   | ------------- | -------- | ------------|
+   | id            | String   | unique id for the user (default field) |
+   | name          | String   | user name for login purposes|
+   | password      | String   | user's password for login purposes|
+   | profileImage  | File     | user profile image|
+   | displayName   | String   | user's display name |
+   | favorites     | Array    | array of id's of favorite trails |
+   
+#### Trail
+
+   | Property      | Type     | Description |
+   | ------------- | -------- | ------------|
+   | id            | String   | Trail ID |
+   | name          | String   | Name of Trail |
+   | state         | String   | State where trail is located |
+   | country       | String   | Country where country is located |
+   | latitude      | String   | Latitude of Trail |
+   | longitude     | String   | Longitude of Trail |
+   | description   | String   | Description of Trail |
+   | trailImage    | File     | Image of Trail |
+   | activityTypes | Array    | Activities available at this trail |
+   | difficulty    | Number   | difficulty rating |  
+   
+      
+#### Review
+
+   | Property      | Type     | Description |
+   | ------------- | -------- | ------------|
+   | id            | String   | unique id for this review |
+   | text          | String   | text for this review |
+   | author        | PFObject | pointer to user object |
+
+   
+### Networking
+#### List of network requests by screen
+   - Trail List View
+      - (Read/GET) Populate list view with trails in user's area
+      - (Delete) Delete existing like
+      - (Create/POST) Create a new comment on a post
+      - (Delete) Delete existing comment
+   - Trail Detail View
+      - (Read/GET) Populate Detail view with selected trail image and data
+      - (Create/POST) Create a new review about this trail
+      - (Update/PUT) Edit posted review
+      - (Delete) Delete review
+   - Map View
+      - (Read/GET) Display map for selected area
+   - User Profile View
+      - (Read/GET) Populate User profile View with profile picture / username
+      - (Update/PUT) Change User profile picture
+      - (Update/PUT) Change User display name
+      
 [This section will be completed in Unit 9]
 ### Models
 [Add table of models]
