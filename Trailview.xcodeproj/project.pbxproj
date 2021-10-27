@@ -9,7 +9,6 @@
 /* Begin PBXBuildFile section */
 		3028DBAA271FC72A006FC73C /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3028DBA9271FC72A006FC73C /* AppDelegate.swift */; };
 		3028DBAC271FC72A006FC73C /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3028DBAB271FC72A006FC73C /* SceneDelegate.swift */; };
-		3028DBAE271FC72A006FC73C /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3028DBAD271FC72A006FC73C /* ViewController.swift */; };
 		3028DBB1271FC72A006FC73C /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3028DBAF271FC72A006FC73C /* Main.storyboard */; };
 		3028DBB3271FC72C006FC73C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3028DBB2271FC72C006FC73C /* Assets.xcassets */; };
 		3028DBB6271FC72C006FC73C /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3028DBB4271FC72C006FC73C /* LaunchScreen.storyboard */; };
@@ -17,6 +16,51 @@
 		3028DBCB271FC72C006FC73C /* TrailviewUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3028DBCA271FC72C006FC73C /* TrailviewUITests.swift */; };
 		3028DBCD271FC72C006FC73C /* TrailviewUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3028DBCC271FC72C006FC73C /* TrailviewUITestsLaunchTests.swift */; };
 		30EE4B07271FC83D002CFA45 /* README.md in Resources */ = {isa = PBXBuildFile; fileRef = 30EE4B06271FC83D002CFA45 /* README.md */; };
+		E24FACB52728E4D100E8BDB4 /* SignInVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = E24FACB32728E4D100E8BDB4 /* SignInVC.swift */; };
+		E24FACB62728E4D100E8BDB4 /* SignInVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = E24FACB32728E4D100E8BDB4 /* SignInVC.swift */; };
+		E24FACB72728E4D100E8BDB4 /* SignInVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = E24FACB32728E4D100E8BDB4 /* SignInVC.swift */; };
+		E24FACB82728E4D100E8BDB4 /* SignInVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = E24FACB42728E4D100E8BDB4 /* SignInVC.xib */; };
+		E24FACB92728E4D100E8BDB4 /* SignInVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = E24FACB42728E4D100E8BDB4 /* SignInVC.xib */; };
+		E24FACBA2728E4D100E8BDB4 /* SignInVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = E24FACB42728E4D100E8BDB4 /* SignInVC.xib */; };
+		E24FACBD2728E4E100E8BDB4 /* LogInVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = E24FACBB2728E4E100E8BDB4 /* LogInVC.swift */; };
+		E24FACBE2728E4E100E8BDB4 /* LogInVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = E24FACBB2728E4E100E8BDB4 /* LogInVC.swift */; };
+		E24FACBF2728E4E100E8BDB4 /* LogInVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = E24FACBB2728E4E100E8BDB4 /* LogInVC.swift */; };
+		E24FACC02728E4E100E8BDB4 /* LogInVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = E24FACBC2728E4E100E8BDB4 /* LogInVC.xib */; };
+		E24FACC12728E4E100E8BDB4 /* LogInVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = E24FACBC2728E4E100E8BDB4 /* LogInVC.xib */; };
+		E24FACC22728E4E100E8BDB4 /* LogInVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = E24FACBC2728E4E100E8BDB4 /* LogInVC.xib */; };
+		E24FACC52728E4F800E8BDB4 /* TrailListVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = E24FACC32728E4F800E8BDB4 /* TrailListVC.swift */; };
+		E24FACC62728E4F800E8BDB4 /* TrailListVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = E24FACC32728E4F800E8BDB4 /* TrailListVC.swift */; };
+		E24FACC72728E4F800E8BDB4 /* TrailListVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = E24FACC32728E4F800E8BDB4 /* TrailListVC.swift */; };
+		E24FACC82728E4F800E8BDB4 /* TrailListVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = E24FACC42728E4F800E8BDB4 /* TrailListVC.xib */; };
+		E24FACC92728E4F800E8BDB4 /* TrailListVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = E24FACC42728E4F800E8BDB4 /* TrailListVC.xib */; };
+		E24FACCA2728E4F800E8BDB4 /* TrailListVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = E24FACC42728E4F800E8BDB4 /* TrailListVC.xib */; };
+		E24FACCD2728E52700E8BDB4 /* TrailDetailViewVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = E24FACCB2728E52700E8BDB4 /* TrailDetailViewVC.swift */; };
+		E24FACCE2728E52700E8BDB4 /* TrailDetailViewVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = E24FACCB2728E52700E8BDB4 /* TrailDetailViewVC.swift */; };
+		E24FACCF2728E52700E8BDB4 /* TrailDetailViewVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = E24FACCB2728E52700E8BDB4 /* TrailDetailViewVC.swift */; };
+		E24FACD02728E52700E8BDB4 /* TrailDetailViewVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = E24FACCC2728E52700E8BDB4 /* TrailDetailViewVC.xib */; };
+		E24FACD12728E52700E8BDB4 /* TrailDetailViewVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = E24FACCC2728E52700E8BDB4 /* TrailDetailViewVC.xib */; };
+		E24FACD22728E52700E8BDB4 /* TrailDetailViewVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = E24FACCC2728E52700E8BDB4 /* TrailDetailViewVC.xib */; };
+		E24FACD92728E55700E8BDB4 /* MapVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = E24FACD72728E55700E8BDB4 /* MapVC.swift */; };
+		E24FACDA2728E55700E8BDB4 /* MapVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = E24FACD72728E55700E8BDB4 /* MapVC.swift */; };
+		E24FACDB2728E55700E8BDB4 /* MapVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = E24FACD72728E55700E8BDB4 /* MapVC.swift */; };
+		E24FACDC2728E55700E8BDB4 /* MapVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = E24FACD82728E55700E8BDB4 /* MapVC.xib */; };
+		E24FACDD2728E55700E8BDB4 /* MapVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = E24FACD82728E55700E8BDB4 /* MapVC.xib */; };
+		E24FACDE2728E55700E8BDB4 /* MapVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = E24FACD82728E55700E8BDB4 /* MapVC.xib */; };
+		E24FACE12728E56500E8BDB4 /* UserProfileVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = E24FACDF2728E56500E8BDB4 /* UserProfileVC.swift */; };
+		E24FACE22728E56500E8BDB4 /* UserProfileVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = E24FACDF2728E56500E8BDB4 /* UserProfileVC.swift */; };
+		E24FACE32728E56500E8BDB4 /* UserProfileVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = E24FACDF2728E56500E8BDB4 /* UserProfileVC.swift */; };
+		E24FACE42728E56500E8BDB4 /* UserProfileVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = E24FACE02728E56500E8BDB4 /* UserProfileVC.xib */; };
+		E24FACE52728E56500E8BDB4 /* UserProfileVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = E24FACE02728E56500E8BDB4 /* UserProfileVC.xib */; };
+		E24FACE62728E56500E8BDB4 /* UserProfileVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = E24FACE02728E56500E8BDB4 /* UserProfileVC.xib */; };
+		E24FACEA2728E57D00E8BDB4 /* SettingsVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = E24FACE82728E57D00E8BDB4 /* SettingsVC.swift */; };
+		E24FACEB2728E57D00E8BDB4 /* SettingsVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = E24FACE82728E57D00E8BDB4 /* SettingsVC.swift */; };
+		E24FACEC2728E57D00E8BDB4 /* SettingsVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = E24FACE82728E57D00E8BDB4 /* SettingsVC.swift */; };
+		E24FACED2728E57D00E8BDB4 /* SettingsVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = E24FACE92728E57D00E8BDB4 /* SettingsVC.xib */; };
+		E24FACEE2728E57D00E8BDB4 /* SettingsVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = E24FACE92728E57D00E8BDB4 /* SettingsVC.xib */; };
+		E24FACEF2728E57D00E8BDB4 /* SettingsVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = E24FACE92728E57D00E8BDB4 /* SettingsVC.xib */; };
+		E24FACF12728E64700E8BDB4 /* NetworkRequestHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = E24FACF02728E64700E8BDB4 /* NetworkRequestHelper.swift */; };
+		E24FACF22728E64700E8BDB4 /* NetworkRequestHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = E24FACF02728E64700E8BDB4 /* NetworkRequestHelper.swift */; };
+		E24FACF32728E64700E8BDB4 /* NetworkRequestHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = E24FACF02728E64700E8BDB4 /* NetworkRequestHelper.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -40,7 +84,6 @@
 		3028DBA6271FC72A006FC73C /* Trailview.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Trailview.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		3028DBA9271FC72A006FC73C /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		3028DBAB271FC72A006FC73C /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		3028DBAD271FC72A006FC73C /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		3028DBB0271FC72A006FC73C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		3028DBB2271FC72C006FC73C /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		3028DBB5271FC72C006FC73C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -51,6 +94,21 @@
 		3028DBCA271FC72C006FC73C /* TrailviewUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TrailviewUITests.swift; sourceTree = "<group>"; };
 		3028DBCC271FC72C006FC73C /* TrailviewUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TrailviewUITestsLaunchTests.swift; sourceTree = "<group>"; };
 		30EE4B06271FC83D002CFA45 /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
+		E24FACB32728E4D100E8BDB4 /* SignInVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignInVC.swift; sourceTree = "<group>"; };
+		E24FACB42728E4D100E8BDB4 /* SignInVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SignInVC.xib; sourceTree = "<group>"; };
+		E24FACBB2728E4E100E8BDB4 /* LogInVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LogInVC.swift; sourceTree = "<group>"; };
+		E24FACBC2728E4E100E8BDB4 /* LogInVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = LogInVC.xib; sourceTree = "<group>"; };
+		E24FACC32728E4F800E8BDB4 /* TrailListVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TrailListVC.swift; sourceTree = "<group>"; };
+		E24FACC42728E4F800E8BDB4 /* TrailListVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = TrailListVC.xib; sourceTree = "<group>"; };
+		E24FACCB2728E52700E8BDB4 /* TrailDetailViewVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TrailDetailViewVC.swift; sourceTree = "<group>"; };
+		E24FACCC2728E52700E8BDB4 /* TrailDetailViewVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = TrailDetailViewVC.xib; sourceTree = "<group>"; };
+		E24FACD72728E55700E8BDB4 /* MapVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapVC.swift; sourceTree = "<group>"; };
+		E24FACD82728E55700E8BDB4 /* MapVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MapVC.xib; sourceTree = "<group>"; };
+		E24FACDF2728E56500E8BDB4 /* UserProfileVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserProfileVC.swift; sourceTree = "<group>"; };
+		E24FACE02728E56500E8BDB4 /* UserProfileVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = UserProfileVC.xib; sourceTree = "<group>"; };
+		E24FACE82728E57D00E8BDB4 /* SettingsVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsVC.swift; sourceTree = "<group>"; };
+		E24FACE92728E57D00E8BDB4 /* SettingsVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SettingsVC.xib; sourceTree = "<group>"; };
+		E24FACF02728E64700E8BDB4 /* NetworkRequestHelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkRequestHelper.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -102,13 +160,13 @@
 		3028DBA8271FC72A006FC73C /* Trailview */ = {
 			isa = PBXGroup;
 			children = (
-				3028DBA9271FC72A006FC73C /* AppDelegate.swift */,
-				3028DBAB271FC72A006FC73C /* SceneDelegate.swift */,
-				3028DBAD271FC72A006FC73C /* ViewController.swift */,
-				3028DBAF271FC72A006FC73C /* Main.storyboard */,
-				3028DBB2271FC72C006FC73C /* Assets.xcassets */,
-				3028DBB4271FC72C006FC73C /* LaunchScreen.storyboard */,
-				3028DBB7271FC72C006FC73C /* Info.plist */,
+				E24FAC982728E3BB00E8BDB4 /* Configure */,
+				E24FAC972728E3AF00E8BDB4 /* Helpers */,
+				E24FAC932728E38700E8BDB4 /* Networking-Manager */,
+				E24FAC962728E3A500E8BDB4 /* Model */,
+				E24FAC952728E3A000E8BDB4 /* View */,
+				E24FAC942728E39100E8BDB4 /* Controller */,
+				E24FAC992728E3D800E8BDB4 /* Assets */,
 			);
 			path = Trailview;
 			sourceTree = "<group>";
@@ -128,6 +186,84 @@
 				3028DBCC271FC72C006FC73C /* TrailviewUITestsLaunchTests.swift */,
 			);
 			path = TrailviewUITests;
+			sourceTree = "<group>";
+		};
+		E24FAC932728E38700E8BDB4 /* Networking-Manager */ = {
+			isa = PBXGroup;
+			children = (
+				E24FACF02728E64700E8BDB4 /* NetworkRequestHelper.swift */,
+			);
+			path = "Networking-Manager";
+			sourceTree = "<group>";
+		};
+		E24FAC942728E39100E8BDB4 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				E24FACB32728E4D100E8BDB4 /* SignInVC.swift */,
+				E24FACBB2728E4E100E8BDB4 /* LogInVC.swift */,
+				E24FACC32728E4F800E8BDB4 /* TrailListVC.swift */,
+				E24FACCB2728E52700E8BDB4 /* TrailDetailViewVC.swift */,
+				E24FACD72728E55700E8BDB4 /* MapVC.swift */,
+				E24FACDF2728E56500E8BDB4 /* UserProfileVC.swift */,
+				E24FACE82728E57D00E8BDB4 /* SettingsVC.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		E24FAC952728E3A000E8BDB4 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				E24FACA22728E45900E8BDB4 /* XIB */,
+				3028DBB4271FC72C006FC73C /* LaunchScreen.storyboard */,
+				3028DBAF271FC72A006FC73C /* Main.storyboard */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		E24FAC962728E3A500E8BDB4 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		E24FAC972728E3AF00E8BDB4 /* Helpers */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Helpers;
+			sourceTree = "<group>";
+		};
+		E24FAC982728E3BB00E8BDB4 /* Configure */ = {
+			isa = PBXGroup;
+			children = (
+				3028DBB7271FC72C006FC73C /* Info.plist */,
+				3028DBA9271FC72A006FC73C /* AppDelegate.swift */,
+				3028DBAB271FC72A006FC73C /* SceneDelegate.swift */,
+			);
+			path = Configure;
+			sourceTree = "<group>";
+		};
+		E24FAC992728E3D800E8BDB4 /* Assets */ = {
+			isa = PBXGroup;
+			children = (
+				3028DBB2271FC72C006FC73C /* Assets.xcassets */,
+			);
+			path = Assets;
+			sourceTree = "<group>";
+		};
+		E24FACA22728E45900E8BDB4 /* XIB */ = {
+			isa = PBXGroup;
+			children = (
+				E24FACB42728E4D100E8BDB4 /* SignInVC.xib */,
+				E24FACBC2728E4E100E8BDB4 /* LogInVC.xib */,
+				E24FACC42728E4F800E8BDB4 /* TrailListVC.xib */,
+				E24FACCC2728E52700E8BDB4 /* TrailDetailViewVC.xib */,
+				E24FACD82728E55700E8BDB4 /* MapVC.xib */,
+				E24FACE02728E56500E8BDB4 /* UserProfileVC.xib */,
+				E24FACE92728E57D00E8BDB4 /* SettingsVC.xib */,
+			);
+			path = XIB;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -234,10 +370,17 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E24FACB82728E4D100E8BDB4 /* SignInVC.xib in Resources */,
+				E24FACD02728E52700E8BDB4 /* TrailDetailViewVC.xib in Resources */,
 				3028DBB6271FC72C006FC73C /* LaunchScreen.storyboard in Resources */,
 				3028DBB3271FC72C006FC73C /* Assets.xcassets in Resources */,
+				E24FACED2728E57D00E8BDB4 /* SettingsVC.xib in Resources */,
 				30EE4B07271FC83D002CFA45 /* README.md in Resources */,
+				E24FACE42728E56500E8BDB4 /* UserProfileVC.xib in Resources */,
+				E24FACC02728E4E100E8BDB4 /* LogInVC.xib in Resources */,
 				3028DBB1271FC72A006FC73C /* Main.storyboard in Resources */,
+				E24FACDC2728E55700E8BDB4 /* MapVC.xib in Resources */,
+				E24FACC82728E4F800E8BDB4 /* TrailListVC.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -245,6 +388,13 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E24FACC92728E4F800E8BDB4 /* TrailListVC.xib in Resources */,
+				E24FACD12728E52700E8BDB4 /* TrailDetailViewVC.xib in Resources */,
+				E24FACC12728E4E100E8BDB4 /* LogInVC.xib in Resources */,
+				E24FACDD2728E55700E8BDB4 /* MapVC.xib in Resources */,
+				E24FACEE2728E57D00E8BDB4 /* SettingsVC.xib in Resources */,
+				E24FACB92728E4D100E8BDB4 /* SignInVC.xib in Resources */,
+				E24FACE52728E56500E8BDB4 /* UserProfileVC.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -252,6 +402,13 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E24FACCA2728E4F800E8BDB4 /* TrailListVC.xib in Resources */,
+				E24FACD22728E52700E8BDB4 /* TrailDetailViewVC.xib in Resources */,
+				E24FACC22728E4E100E8BDB4 /* LogInVC.xib in Resources */,
+				E24FACDE2728E55700E8BDB4 /* MapVC.xib in Resources */,
+				E24FACEF2728E57D00E8BDB4 /* SettingsVC.xib in Resources */,
+				E24FACBA2728E4D100E8BDB4 /* SignInVC.xib in Resources */,
+				E24FACE62728E56500E8BDB4 /* UserProfileVC.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -262,9 +419,16 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				3028DBAE271FC72A006FC73C /* ViewController.swift in Sources */,
+				E24FACCD2728E52700E8BDB4 /* TrailDetailViewVC.swift in Sources */,
+				E24FACC52728E4F800E8BDB4 /* TrailListVC.swift in Sources */,
 				3028DBAA271FC72A006FC73C /* AppDelegate.swift in Sources */,
+				E24FACB52728E4D100E8BDB4 /* SignInVC.swift in Sources */,
+				E24FACE12728E56500E8BDB4 /* UserProfileVC.swift in Sources */,
+				E24FACD92728E55700E8BDB4 /* MapVC.swift in Sources */,
+				E24FACBD2728E4E100E8BDB4 /* LogInVC.swift in Sources */,
 				3028DBAC271FC72A006FC73C /* SceneDelegate.swift in Sources */,
+				E24FACEA2728E57D00E8BDB4 /* SettingsVC.swift in Sources */,
+				E24FACF12728E64700E8BDB4 /* NetworkRequestHelper.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -272,7 +436,15 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E24FACB62728E4D100E8BDB4 /* SignInVC.swift in Sources */,
+				E24FACDA2728E55700E8BDB4 /* MapVC.swift in Sources */,
+				E24FACF22728E64700E8BDB4 /* NetworkRequestHelper.swift in Sources */,
+				E24FACE22728E56500E8BDB4 /* UserProfileVC.swift in Sources */,
+				E24FACC62728E4F800E8BDB4 /* TrailListVC.swift in Sources */,
 				3028DBC1271FC72C006FC73C /* TrailviewTests.swift in Sources */,
+				E24FACEB2728E57D00E8BDB4 /* SettingsVC.swift in Sources */,
+				E24FACBE2728E4E100E8BDB4 /* LogInVC.swift in Sources */,
+				E24FACCE2728E52700E8BDB4 /* TrailDetailViewVC.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -280,8 +452,16 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E24FACF32728E64700E8BDB4 /* NetworkRequestHelper.swift in Sources */,
 				3028DBCD271FC72C006FC73C /* TrailviewUITestsLaunchTests.swift in Sources */,
+				E24FACCF2728E52700E8BDB4 /* TrailDetailViewVC.swift in Sources */,
 				3028DBCB271FC72C006FC73C /* TrailviewUITests.swift in Sources */,
+				E24FACBF2728E4E100E8BDB4 /* LogInVC.swift in Sources */,
+				E24FACDB2728E55700E8BDB4 /* MapVC.swift in Sources */,
+				E24FACB72728E4D100E8BDB4 /* SignInVC.swift in Sources */,
+				E24FACC72728E4F800E8BDB4 /* TrailListVC.swift in Sources */,
+				E24FACE32728E56500E8BDB4 /* UserProfileVC.swift in Sources */,
+				E24FACEC2728E57D00E8BDB4 /* SettingsVC.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
