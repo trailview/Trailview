@@ -42,7 +42,7 @@ class MapVC: UIViewController, CLLocationManagerDelegate{
         mapView.setRegion(userRegion, animated:true)
     }
     func locationManager(_ manager: CLLocationManager, didFailWithError error: Error){
-        print("Error")
+        print("Error!")
     }
     
     
