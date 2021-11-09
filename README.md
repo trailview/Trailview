@@ -34,12 +34,13 @@ pictures, etc.
 
 **Required Must-have Stories**
 
-* User can create an account.
-* User can log in.
-* User can search for trails in their area
-* User can add comments and media to comment section for each trail
-* User has a profile with basic info
-* User has a trail "wishlist"
+[x] User can create an account.
+[x] User can log in.
+[x] User can view their location on a map.
+[ ] User can search for trails in their area
+[ ] User can add comments and media to comment section for each trail
+[x] User has a profile with basic info
+[ ] User has a trail "wishlist"
 
 **Optional Nice-to-have Stories**
 
