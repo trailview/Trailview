@@ -1,0 +1,6 @@
+framework module Pods_Trailview_TrailviewUITests {
+  umbrella header "Pods-Trailview-TrailviewUITests-umbrella.h"
+
+  export *
+  module * { export * }
+}

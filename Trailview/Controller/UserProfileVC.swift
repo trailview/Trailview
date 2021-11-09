@@ -10,13 +10,27 @@
 //
 
 import UIKit
+import Parse
+import AlamofireImage
 
 class UserProfileVC: UIViewController {
+    
+    @IBOutlet weak var userProfileImage: UIImageView!
+    @IBOutlet weak var usernameLabel: UILabel!
+    
+    let user = PFUser.current()!
 
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        usernameLabel.text = user.username
+        
+        let userProfileImageFile = user["profileImage"] as! PFFileObject
+        let profileImgURLString = userProfileImageFile.url!
+        let userProfileImageURL = URL(string: profileImgURLString)!
+        
+        userProfileImage.af.setImage(withURL: userProfileImageURL)
 
-        // Do any additional setup after loading the view.
     }
 
 
