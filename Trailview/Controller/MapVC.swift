@@ -15,8 +15,8 @@ import CoreLocation
 
 class MapVC: UIViewController, CLLocationManagerDelegate{
     
-    
     @IBOutlet weak var mapView: MKMapView!
+    
     var locationManager:CLLocationManager!
     var curLocation = "My Location"
     

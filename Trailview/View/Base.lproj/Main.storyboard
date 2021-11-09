@@ -238,14 +238,23 @@
                     <view key="view" contentMode="scaleToFill" id="2p9-38-oBD">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <mapView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" mapType="standard" translatesAutoresizingMaskIntoConstraints="NO" id="Wsb-qS-CTZ">
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </mapView>
+                        </subviews>
                         <viewLayoutGuide key="safeArea" id="8uH-ra-E6z"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                     </view>
                     <tabBarItem key="tabBarItem" title="Map" id="Ibb-2o-yYd"/>
+                    <connections>
+                        <outlet property="mapView" destination="Wsb-qS-CTZ" id="Srp-cY-7LN"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="zBs-nm-ZME" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2267" y="917"/>
+            <point key="canvasLocation" x="2266.666666666667" y="916.74107142857133"/>
         </scene>
         <!--UserProfileView-->
         <scene sceneID="5Hj-Ow-7fw">
