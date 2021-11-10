@@ -10,16 +10,28 @@
 //
 
 import UIKit
+import Parse
 
 class SettingsVC: UIViewController {
-
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 
         // Do any additional setup after loading the view.
     }
 
+    @IBAction func logOutButton(_ sender: Any) {
+        PFUser.logOut()
+        
+        let main = UIStoryboard(name: "Main", bundle: nil)
+        let LogInVC = main.instantiateViewController(withIdentifier: "LogInVC")
+        
+        guard let windowScene = UIApplication.shared.connectedScenes.first as? UIWindowScene, let delegate = windowScene.delegate as? SceneDelegate else { return }
+        
+        delegate.window?.rootViewController = LogInVC
 
+    }
+    
     /*
     // MARK: - Navigation
 
