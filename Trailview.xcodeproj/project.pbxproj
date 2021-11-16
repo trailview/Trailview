@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		300640D1273EF2F1004E36D4 /* ParkAPICaller.swift in Sources */ = {isa = PBXBuildFile; fileRef = 300640D0273EF2F1004E36D4 /* ParkAPICaller.swift */; };
+		300640D3273EF336004E36D4 /* ParksAPIResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 300640D2273EF336004E36D4 /* ParksAPIResponse.swift */; };
 		3028DBAA271FC72A006FC73C /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3028DBA9271FC72A006FC73C /* AppDelegate.swift */; };
 		3028DBAC271FC72A006FC73C /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3028DBAB271FC72A006FC73C /* SceneDelegate.swift */; };
 		3028DBB1271FC72A006FC73C /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3028DBAF271FC72A006FC73C /* Main.storyboard */; };
@@ -84,6 +86,8 @@
 
 /* Begin PBXFileReference section */
 		08B33A2CA725540F345379A9 /* Pods-TrailviewTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TrailviewTests.release.xcconfig"; path = "Target Support Files/Pods-TrailviewTests/Pods-TrailviewTests.release.xcconfig"; sourceTree = "<group>"; };
+		300640D0273EF2F1004E36D4 /* ParkAPICaller.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ParkAPICaller.swift; sourceTree = "<group>"; };
+		300640D2273EF336004E36D4 /* ParksAPIResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ParksAPIResponse.swift; sourceTree = "<group>"; };
 		3028DBA6271FC72A006FC73C /* Trailview.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Trailview.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		3028DBA9271FC72A006FC73C /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		3028DBAB271FC72A006FC73C /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -232,6 +236,8 @@
 			isa = PBXGroup;
 			children = (
 				E24FACF02728E64700E8BDB4 /* NetworkRequestHelper.swift */,
+				300640D0273EF2F1004E36D4 /* ParkAPICaller.swift */,
+				300640D2273EF336004E36D4 /* ParksAPIResponse.swift */,
 			);
 			path = "Networking-Manager";
 			sourceTree = "<group>";
@@ -569,12 +575,14 @@
 			buildActionMask = 2147483647;
 			files = (
 				E24FACCD2728E52700E8BDB4 /* TrailDetailViewVC.swift in Sources */,
+				300640D1273EF2F1004E36D4 /* ParkAPICaller.swift in Sources */,
 				E24FACC52728E4F800E8BDB4 /* TrailListVC.swift in Sources */,
 				3028DBAA271FC72A006FC73C /* AppDelegate.swift in Sources */,
 				E24FACE12728E56500E8BDB4 /* UserProfileVC.swift in Sources */,
 				30F436652739D54F00D9D315 /* TrailCell.swift in Sources */,
 				E24FACD92728E55700E8BDB4 /* MapVC.swift in Sources */,
 				E24FACBD2728E4E100E8BDB4 /* LogInVC.swift in Sources */,
+				300640D3273EF336004E36D4 /* ParksAPIResponse.swift in Sources */,
 				3028DBAC271FC72A006FC73C /* SceneDelegate.swift in Sources */,
 				E24FACEA2728E57D00E8BDB4 /* SettingsVC.swift in Sources */,
 				307D28772739B72E0061C4F2 /* SignUpVC.swift in Sources */,

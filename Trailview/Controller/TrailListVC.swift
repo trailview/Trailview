@@ -18,7 +18,7 @@ class TrailListVC: UIViewController, UITableViewDelegate, UITableViewDataSource 
 
     @IBOutlet weak var trailTableView: UITableView!
     
-    var trails = [PFObject]()
+    var parkList = [Park]()
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -27,42 +27,42 @@ class TrailListVC: UIViewController, UITableViewDelegate, UITableViewDataSource 
         trailTableView.delegate = self
         trailTableView.dataSource = self
         
+    }
+    
+    override func loadView() {
+        super.loadView()
+        let parksData = ParksAPICall(stateCode: "wa")
+        parksData.getParks() { jsonAPIResponse in
+            self.parkList = jsonAPIResponse.data
+        }
         
-
-        // Do any additional setup after loading the view.
     }
     
     override func viewDidAppear(_ animated: Bool) {
         super.viewDidAppear(animated)
         
-        let query = PFQuery(className: "Trails")
-        query.limit = 20
-        
-        query.findObjectsInBackground { trails, error in
-            if trails != nil {
-                self.trails = trails!
-                self.trailTableView.reloadData()
-            }
-        }
+        self.trailTableView.reloadData()
     }
     
+    
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return trails.count
+        return parkList.count
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+        
         let cell = trailTableView.dequeueReusableCell(withIdentifier: "TrailCell") as! TrailCell
         
-        let trail = trails[indexPath.row]
+        let park = self.parkList[indexPath.row]
+
+        cell.trailName.text = park.fullName
+        cell.trailDescription.text = park.description
+
+        let firstParkImage = park.images[0]
+        let parkImageString = firstParkImage.url
+        let parkImageURL = URL(string: parkImageString)!
+        cell.trailImage.af.setImage(withURL: parkImageURL)
         
-        cell.trailName.text = (trail["trailName"] as! String)
-        cell.trailDescription.text = (trail["trailDescription"] as! String)
-        
-        let trailImageFile = trail["trailImage"] as! PFFileObject
-        let urlString = trailImageFile.url!
-        let trailImageURL = URL(string: urlString)!
-        
-        cell.trailImage.af.setImage(withURL: trailImageURL)
         
         return cell
     }
