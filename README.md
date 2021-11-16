@@ -55,7 +55,7 @@ pictures, etc.
 
 Here's a walkthrough of implemented user stories:
 
-<img src='https://github.com/trailview/Trailview/blob/main/Trailview-11-08-2021.gif' title='Video Walkthrough' width='' alt='Video Walkthrough' />
+<img src='https://github.com/trailview/Trailview/blob/main/Trailview-11-16-2021.gif' title='Video Walkthrough' width='' alt='Video Walkthrough' />
 
 ### 2. Screen Archetypes
 
