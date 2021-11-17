@@ -6,6 +6,7 @@
       "size" : "20x20"
     },
     {
+      "filename" : "Trailview(5).jpg",
       "idiom" : "iphone",
       "scale" : "3x",
       "size" : "20x20"
@@ -21,21 +22,25 @@
       "size" : "29x29"
     },
     {
+      "filename" : "Trailview(6).jpg",
       "idiom" : "iphone",
       "scale" : "2x",
       "size" : "40x40"
     },
     {
+      "filename" : "Trailview(2).jpg",
       "idiom" : "iphone",
       "scale" : "3x",
       "size" : "40x40"
     },
     {
+      "filename" : "Trailview(4).jpg",
       "idiom" : "iphone",
       "scale" : "2x",
       "size" : "60x60"
     },
     {
+      "filename" : "Trailview(1).jpg",
       "idiom" : "iphone",
       "scale" : "3x",
       "size" : "60x60"
@@ -76,6 +81,7 @@
       "size" : "76x76"
     },
     {
+      "filename" : "Trailview(3).jpg",
       "idiom" : "ipad",
       "scale" : "2x",
       "size" : "76x76"
