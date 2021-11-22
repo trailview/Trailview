@@ -55,7 +55,7 @@ class TrailListVC: UIViewController, UITableViewDelegate, UITableViewDataSource 
         
         let park = self.parkList[indexPath.row]
 
-        cell.trailName.text = park.fullName
+        cell.trailName.text = park.name
         cell.trailDescription.text = park.description
 
         let firstParkImage = park.images[0]
@@ -63,8 +63,19 @@ class TrailListVC: UIViewController, UITableViewDelegate, UITableViewDataSource 
         let parkImageURL = URL(string: parkImageString)!
         cell.trailImage.af.setImage(withURL: parkImageURL)
         
-        
         return cell
+    }
+    
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        
+        let cell = sender as! UITableViewCell
+        let indexPath = trailTableView.indexPath(for: cell)!
+        let park = parkList[indexPath.row]
+        
+        let detailsViewController = segue.destination as! TrailDetailViewVC
+        detailsViewController.park = park
+        
+        trailTableView.deselectRow(at: indexPath, animated: true)
     }
     
     

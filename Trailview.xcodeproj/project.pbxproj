@@ -18,6 +18,7 @@
 		3028DBCB271FC72C006FC73C /* TrailviewUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3028DBCA271FC72C006FC73C /* TrailviewUITests.swift */; };
 		3028DBCD271FC72C006FC73C /* TrailviewUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3028DBCC271FC72C006FC73C /* TrailviewUITestsLaunchTests.swift */; };
 		307D28772739B72E0061C4F2 /* SignUpVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 307D28762739B72E0061C4F2 /* SignUpVC.swift */; };
+		309B9E99274C425F00918D51 /* StateSelectorVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 309B9E98274C425F00918D51 /* StateSelectorVC.swift */; };
 		30EE4B07271FC83D002CFA45 /* README.md in Resources */ = {isa = PBXBuildFile; fileRef = 30EE4B06271FC83D002CFA45 /* README.md */; };
 		30F436652739D54F00D9D315 /* TrailCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30F436642739D54F00D9D315 /* TrailCell.swift */; };
 		52D97595A0CB775DE887C050 /* Pods_TrailviewTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 58CDF7A1AC0829ED0B9C16AB /* Pods_TrailviewTests.framework */; };
@@ -101,6 +102,7 @@
 		3028DBCA271FC72C006FC73C /* TrailviewUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TrailviewUITests.swift; sourceTree = "<group>"; };
 		3028DBCC271FC72C006FC73C /* TrailviewUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TrailviewUITestsLaunchTests.swift; sourceTree = "<group>"; };
 		307D28762739B72E0061C4F2 /* SignUpVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpVC.swift; sourceTree = "<group>"; };
+		309B9E98274C425F00918D51 /* StateSelectorVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StateSelectorVC.swift; sourceTree = "<group>"; };
 		30EE4B06271FC83D002CFA45 /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 		30F436642739D54F00D9D315 /* TrailCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TrailCell.swift; sourceTree = "<group>"; };
 		4A81BA892E30A52A99E4292E /* Pods-Trailview.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Trailview.debug.xcconfig"; path = "Target Support Files/Pods-Trailview/Pods-Trailview.debug.xcconfig"; sourceTree = "<group>"; };
@@ -247,6 +249,7 @@
 			children = (
 				E24FACBB2728E4E100E8BDB4 /* LogInVC.swift */,
 				30F436642739D54F00D9D315 /* TrailCell.swift */,
+				309B9E98274C425F00918D51 /* StateSelectorVC.swift */,
 				E24FACC32728E4F800E8BDB4 /* TrailListVC.swift */,
 				E24FACCB2728E52700E8BDB4 /* TrailDetailViewVC.swift */,
 				307D28762739B72E0061C4F2 /* SignUpVC.swift */,
@@ -574,6 +577,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				309B9E99274C425F00918D51 /* StateSelectorVC.swift in Sources */,
 				E24FACCD2728E52700E8BDB4 /* TrailDetailViewVC.swift in Sources */,
 				300640D1273EF2F1004E36D4 /* ParkAPICaller.swift in Sources */,
 				E24FACC52728E4F800E8BDB4 /* TrailListVC.swift in Sources */,

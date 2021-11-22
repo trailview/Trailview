@@ -33,10 +33,10 @@ struct Park: Decodable {
 //    let directionsInfo: String
 //    let directionsUrl: String
 //    let operatingHours: [Hours]
-//    let addresses: [Address]
+    let addresses: [Address]
     let images: [Image]
-//    let weatherInfo: String
-//    let name: String
+    let weatherInfo: String
+    let name: String
 //    let designation: String
 }
 

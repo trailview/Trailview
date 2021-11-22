@@ -13,10 +13,36 @@ import UIKit
 
 class TrailDetailViewVC: UIViewController {
 
+    @IBOutlet weak var ParkDetailImage: UIImageView!
+    @IBOutlet weak var ParkDetailName: UILabel!
+    @IBOutlet weak var ParkDetailLocation: UILabel!
+    @IBOutlet weak var ParkDetailDescription: UILabel!
+    @IBOutlet weak var ParkDetailWeather: UILabel!
+    
+    var park: Park!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 
         // Do any additional setup after loading the view.
+        
+        let firstParkImage = park.images[0]
+        let parkImageString = firstParkImage.url
+        let parkImageURL = URL(string: parkImageString)!
+        ParkDetailImage.af.setImage(withURL: parkImageURL)
+        
+        ParkDetailName.text = park.fullName
+        ParkDetailDescription.text = park.description
+        ParkDetailWeather.text = park.weatherInfo
+        
+        let parkCity = park.addresses[0].city
+        var parkState = park.addresses[0].stateCode
+        parkState = parkState.uppercased()
+        let parkLocation = parkCity + ", " + parkState
+        
+        ParkDetailLocation.text = parkLocation
+
+        
     }
 
 
