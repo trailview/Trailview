@@ -19,6 +19,7 @@ class TrailListVC: UIViewController, UITableViewDelegate, UITableViewDataSource 
     @IBOutlet weak var trailTableView: UITableView!
     
     var parkList = [Park]()
+    var selectedStateCode: String!
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -31,7 +32,7 @@ class TrailListVC: UIViewController, UITableViewDelegate, UITableViewDataSource 
     
     override func loadView() {
         super.loadView()
-        let parksData = ParksAPICall(stateCode: "wa")
+        let parksData = ParksAPICall(stateCode: selectedStateCode)
         parksData.getParks() { jsonAPIResponse in
             self.parkList = jsonAPIResponse.data
         }

@@ -6,31 +6,34 @@
 //
 
 import UIKit
+import Parse
 
 class StateSelectorVC: UIViewController, UIPickerViewDelegate, UIPickerViewDataSource {
 
     @IBOutlet weak var stateSelector: UIPickerView!
     
-    var stateSelectorData: [String] = [String]()
+    var stateList: [String] = [String]()
     var selectedState: String = ""
+    let user = PFUser.current()!
     
     func numberOfComponents(in pickerView: UIPickerView) -> Int {
         return 1
     }
     
     func pickerView(_ pickerView: UIPickerView, numberOfRowsInComponent component: Int) -> Int {
-        return stateSelectorData.count
+        return stateList.count
     }
     
     func pickerView(_ pickerView: UIPickerView, titleForRow row: Int, forComponent component: Int) -> String? {
-        return stateSelectorData[row]
+        return stateList[row]
     }
     
     func pickerView(_ pickerView: UIPickerView, didSelectRow row: Int, inComponent component: Int) {
-        selectedState = stateSelectorData[row]
+        selectedState = stateList[stateSelector.selectedRow(inComponent: 0)]
         // Save selected row integer in User Defaults
         UserDefaults.standard.set(row, forKey: "pickerViewRow")
     }
+
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -38,18 +41,25 @@ class StateSelectorVC: UIViewController, UIPickerViewDelegate, UIPickerViewDataS
         self.stateSelector.delegate = self
         self.stateSelector.dataSource = self
         
-        let row = UserDefaults.standard.integer(forKey: "pickerViewRow")
+        let user = PFUser.current()!
         
-        stateSelector.selectRow(row, inComponent: 0, animated: false)
+        stateList = ["Alabama", "Alaska",  "Arizona", "Arkansas", "California", "Colorado", "Connecticut", "Delaware", "Florida", "Georgia", "Hawaii", "Idaho", "Illinois", "Indiana", "Iowa", "Kansas", "Kentucky", "Louisiana", "Maine", "Maryland", "Massachusetts", "Michigan", "Minnesota", "Mississippi", "Missouri", "Montana", "Nebraska", "Nevada", "New Hampshire", "New Jersey", "New Mexico", "New York", "North Carolina", "North Dakota", "Ohio", "Oklahoma", "Oregon", "Pennsylvania", "Rhode Island", "South Carolina", "South Dakota", "Tennessee", "Texas", "Utah", "Vermont", "Virginia", "Washington", "West Virginia", "Wisconsin", "Wyoming"]
         
-        print(selectedState)
+        setDefaultValue(item: user["defaultState"] as! String, component: 0)
+        selectedState = user["defaultState"] as! String
         
-        stateSelectorData = ["Alabama", "Alaska",  "Arizona", "Arkansas", "California", "Colorado", "Connecticut", "Delaware", "Florida", "Georgia", "Hawaii", "Idaho", "Illinois", "Indiana", "Iowa", "Kansas", "Kentucky", "Louisiana", "Maine", "Maryland", "Massachusetts", "Michigan", "Minnesota", "Mississippi", "Missouri", "Montana", "Nebraska", "Nevada", "New Hampshire", "New Jersey", "New Mexico", "New York", "North Carolina", "North Dakota", "Ohio", "Oklahoma", "Oregon", "Pennsylvania", "Rhode Island", "South Carolina", "South Dakota", "Tennessee", "Texas", "Utah", "Vermont", "Virginia", "Washington", "West Virginia", "Wisconsin", "Wyoming"]
+        print(self.selectedState)
         
     }
     
+    func setDefaultValue(item: String, component: Int) {
+        if let pickerRow = stateList.firstIndex(of: item) {
+            stateSelector.selectRow(pickerRow, inComponent: 0, animated: true)
+        }
+    }
+    
     @IBAction func submitStateSelection(_ sender: Any) {
-
+        
     }
     
     
@@ -106,6 +116,26 @@ class StateSelectorVC: UIViewController, UIPickerViewDelegate, UIPickerViewDataS
         "Wisconsin": "WI",
         "Wyoming": "WY"
     ]
+    
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        
+        user["defaultState"] = selectedState
+        user.saveInBackground { (success, error) in
+            if success {
+                print("saved!")
+            } else {
+                print("error!")
+            }
+        }
+        
+        let selectedStateFullName = self.selectedState as String
+        let selectedStateAbbrevUpper = self.stateAbbreviations[selectedStateFullName]
+        let selectedStateAbbrevLower = selectedStateAbbrevUpper!.lowercased()
+        
+        let trailListViewController = segue.destination as! TrailListVC
+        trailListViewController.selectedStateCode = selectedStateAbbrevLower
+        
+    }
     
     /*
     // MARK: - Navigation

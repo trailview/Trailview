@@ -16,8 +16,10 @@ class TrailDetailViewVC: UIViewController {
     @IBOutlet weak var ParkDetailImage: UIImageView!
     @IBOutlet weak var ParkDetailName: UILabel!
     @IBOutlet weak var ParkDetailLocation: UILabel!
-    @IBOutlet weak var ParkDetailDescription: UILabel!
-    @IBOutlet weak var ParkDetailWeather: UILabel!
+    @IBOutlet weak var ParkDetailDescription: UITextView!
+    @IBOutlet weak var ParkDetailWeather: UITextView!
+    
+
     
     var park: Park!
     
