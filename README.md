@@ -37,10 +37,10 @@ pictures, etc.
 [x] User can create an account.
 [x] User can log in.
 [x] User can view their location on a map.
-[ ] User can search for trails in their area
-[ ] User can add comments and media to comment section for each trail
 [x] User has a profile with basic info
-[ ] User has a trail "wishlist"
+[x] User can select a state to see National Parks
+[x] User's selected park is saved across log outs and restarts
+[x] User can tap a national park to see a detail view for that park
 
 **Optional Nice-to-have Stories**
 
@@ -55,7 +55,7 @@ pictures, etc.
 
 Here's a walkthrough of implemented user stories:
 
-<img src='https://github.com/trailview/Trailview/blob/main/Trailview-11-16-2021.gif' title='Video Walkthrough' width='' alt='Video Walkthrough' />
+<img src='https://github.com/trailview/Trailview/blob/main/Trailview-11-22-2021.gif' title='Video Walkthrough' width='' alt='Video Walkthrough' />
 
 ### 2. Screen Archetypes
 
