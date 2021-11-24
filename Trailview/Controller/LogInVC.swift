@@ -1,30 +1,45 @@
 //
 //  LogInVC.swift
-//  Trailview
+//  ParkView
 //
-//  Created by TrailViewers on 10/26/2021
-//  Copyright © TrailViewers. All rights reserved.
+//  Created by ParkViewers on 10/26/2021
+//  Copyright © ParkViewers. All rights reserved.
 //
-//  TrailViewers: Anh Vu, Elizabeth Thorne, Mark Jordan, Reid William Strange
-//  Date Modified: 10/26/2021
+//  ParkViewers: Anh Vu, Elizabeth Thorne, Mark Jordan, Reid William Strange
+//  Date Modified: 11/23/2021
 //
 
 import UIKit
 import Parse
 
 
-class LogInVC: UIViewController {
+class LogInVC: UIViewController, UITextFieldDelegate {
 
+    // MARK: - Properties/Outlets
+    
     @IBOutlet weak var usernameTextField: UITextField!
     @IBOutlet weak var passwordTextField: UITextField!
+    @IBOutlet weak var forgotPasswordButton: UIButton!
+    @IBOutlet weak var logInButton: UIButton!
+    @IBOutlet weak var noAccountYetLabel: UILabel!
+    @IBOutlet weak var googleButton: UIButton!
+    @IBOutlet weak var signUpButton: UIButton!
     
     
+    // MARK: - Life Cycle
     
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        // Do any additional setup after loading the view.
+        // configure forgot password button
+        configureButton(buttonName: forgotPasswordButton, top: 1, leading: 1, bottom: 1, trailing: 1)
+        
+        // configure google auth button
+        configureButton(buttonName: googleButton, top: 1, leading: 1, bottom: 1, trailing: 1)
     }
+    
+    
+    // MARK: - Navigation
 
     @IBAction func logInButton(_ sender: Any) {
         let username = usernameTextField.text!
@@ -34,7 +49,7 @@ class LogInVC: UIViewController {
             if user != nil {
                 self.performSegue(withIdentifier: "logInSegue", sender: nil)
             } else {
-                print("Error: \(error?.localizedDescription)")
+                print(error!.localizedDescription)
             }
         }
         
@@ -43,14 +58,17 @@ class LogInVC: UIViewController {
     @IBAction func signUpButton(_ sender: Any) {
         performSegue(withIdentifier: "signUpSegue", sender: nil)
     }
-    /*
-    // MARK: - Navigation
 
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destination.
-        // Pass the selected object to the new view controller.
+    
+    // MARK: - Helper Methods
+    
+    func configureButton(buttonName: UIButton!, top: CGFloat, leading: CGFloat, bottom: CGFloat, trailing: CGFloat) {
+        // configure content insets with respect to button boundary
+        buttonName.configuration?.contentInsets = NSDirectionalEdgeInsets(top: top, leading: leading, bottom: bottom, trailing: trailing)
     }
-    */
-
+    
+    // MARK: - Delegate Methods
+    
+    // TODO: Add delegate methods to modify text behavior in the textfields
+    
 }

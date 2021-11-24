@@ -1,23 +1,37 @@
 //
-//  SignUpVC.swift
-//  Trailview
+//  LogInVC.swift
+//  ParkView
 //
-//  Created by Reid Strange on 11/8/21.
+//  Created by ParkViewers on 11/23/2021
+//  Copyright © ParkViewers. All rights reserved.
+//
+//  ParkViewers: Anh Vu, Elizabeth Thorne, Mark Jordan, Reid William Strange
+//  Date Modified: 11/23/2021
 //
 
 import UIKit
 import Parse
 
-class SignUpVC: UIViewController {
+class SignUpVC: UIViewController, UITextFieldDelegate {
 
+    // MARK: - Properties/Outlets
+    
     @IBOutlet weak var usernameTextField: UITextField!
     @IBOutlet weak var passwordTextField: UITextField!
+    
+    
+    // MARK: - Life Cycle
     
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        // Do any additional setup after loading the view.
+        // initialize delegate methods
+        usernameTextField.delegate = self
+        passwordTextField.delegate = self
     }
+    
+    
+    // MARK: - Navigation
     
     @IBAction func createAccountButton(_ sender: Any) {
         let user = PFUser()
@@ -28,22 +42,18 @@ class SignUpVC: UIViewController {
             if success {
                 self.dismiss(animated: true, completion: nil)
             } else {
-                print("Error: \(error?.localizedDescription)")
+                print(error!.localizedDescription)
             }
         }
     }
     
-    @IBAction func cancelButton(_ sender: Any) {
+    @IBAction func returnToLogIn(_ sender: Any) {
         self.dismiss(animated: true, completion: nil)
     }
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destination.
-        // Pass the selected object to the new view controller.
-    }
-    */
-
+    
+    
+    // MARK: - Delegate Methods
+    
+    // TODO: Add delegate methods to modify text behavior in the textfields
+    
 }

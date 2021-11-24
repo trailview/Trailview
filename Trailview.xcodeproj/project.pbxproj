@@ -248,11 +248,11 @@
 			isa = PBXGroup;
 			children = (
 				E24FACBB2728E4E100E8BDB4 /* LogInVC.swift */,
+				307D28762739B72E0061C4F2 /* SignUpVC.swift */,
 				30F436642739D54F00D9D315 /* TrailCell.swift */,
 				309B9E98274C425F00918D51 /* StateSelectorVC.swift */,
 				E24FACC32728E4F800E8BDB4 /* TrailListVC.swift */,
 				E24FACCB2728E52700E8BDB4 /* TrailDetailViewVC.swift */,
-				307D28762739B72E0061C4F2 /* SignUpVC.swift */,
 				E24FACD72728E55700E8BDB4 /* MapVC.swift */,
 				E24FACDF2728E56500E8BDB4 /* UserProfileVC.swift */,
 				E24FACE82728E57D00E8BDB4 /* SettingsVC.swift */,
